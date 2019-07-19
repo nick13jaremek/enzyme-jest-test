@@ -3,6 +3,7 @@ import { shallow, mount } from 'enzyme';
 import App from '../src/App';
 import Header from '../src/Header';
 import Footer from '../src/Footer';
+import Title from '../src/Title';
 
 describe('App component', () => {
   let wrapper;
@@ -28,6 +29,12 @@ describe('App component', () => {
       expect(wrapper.find(Footer)).toHaveLength(1);
     });
 
+    test('should NOT render the children of the Header component', () => {
+      expect(wrapper.find(Title)).toHaveLength(0);
+
+      const header = wrapper.find(Header).first();
+      expect(header.find(Title)).toHaveLength(0);
+    });
 
     test('should not find the header component class name', () => {
       expect(wrapper.find('.header')).toHaveLength(0);
@@ -52,10 +59,16 @@ describe('App component', () => {
     });
 
     test('should have a Header component wrapping the actual component markup code', () => {
-      console.log(wrapper.debug());
       expect(wrapper.find(Header)).toHaveLength(1);
 
       expect(wrapper.find('.header')).toHaveLength(1);
+    });
+
+    test('should have rendered the Title component that is child to Header component', () => {
+      expect(wrapper.find(Title)).toHaveLength(1);
+
+      const header = wrapper.find(Header).first();
+      expect(header.find(Title)).toHaveLength(1);
     });
 
     test('should have a Footer component as-is', () => {

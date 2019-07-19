@@ -1,9 +1,10 @@
 import React from 'react';
+import Title from '../Title';
 
 const Header = () => {
   return (
     <div className="header">
-      <h1>Jest + Enzyme!</h1>
+    <Title title="Jest + Enzyme!" />
     </div>
   );
 };
