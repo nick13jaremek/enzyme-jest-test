@@ -4,7 +4,7 @@
   "description": "A sample repository to showcase the usage of Jest and Enzyme libraries",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage"
   },
   "keywords": [
     "test",
