@@ -1,0 +1,17 @@
+{
+  "name": "enzyme-jest-test",
+  "version": "1.0.0",
+  "description": "A sample repository to showcase the usage of Jest and Enzyme libraries",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "test",
+    "jest",
+    "enzyme",
+    "poc"
+  ],
+  "author": "Nick M. Jaremek",
+  "license": "ISC"
+}
