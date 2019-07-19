@@ -13,5 +13,10 @@
     "poc"
   ],
   "author": "Nick M. Jaremek",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "jest": "^24.8.0"
+  }
 }
