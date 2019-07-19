@@ -1,9 +1,9 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import App from '../src/App';
-import Header from '../src/Header';
-import Footer from '../src/Footer';
-import Title from '../src/Title';
+import App from '../src/components/App';
+import Header from '../src/components/Header';
+import Footer from '../src/components/Footer';
+import Title from '../src/components/Title';
 
 describe('App component', () => {
   let wrapper;
