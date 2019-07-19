@@ -15,7 +15,6 @@ const actionsMap = {
 };
 
 export const alerts = (state = initialState, action = {}) => {
-  console.log('RECEIVED', state);
   const fn = actionsMap[action.type];
   return fn ? fn(state, action) : state;
 };
