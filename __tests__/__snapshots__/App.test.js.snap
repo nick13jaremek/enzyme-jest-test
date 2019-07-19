@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component mount should match snapshot 1`] = `
+<App>
+  <div
+    className="App"
+  >
+    <Header>
+      <div
+        className="header"
+      >
+        <h1>
+          Jest + Enzyme!
+        </h1>
+      </div>
+    </Header>
+    <Footer>
+      <div
+        className="footer"
+      >
+        <ul>
+          <li>
+            Contact
+          </li>
+          <li>
+            About
+          </li>
+        </ul>
+      </div>
+    </Footer>
+  </div>
+</App>
+`;
+
+exports[`App component shallow should match snapshot 1`] = `
+<div
+  className="App"
+>
+  <Header />
+  <Footer />
+</div>
+`;
