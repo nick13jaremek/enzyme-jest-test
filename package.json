@@ -4,7 +4,8 @@
   "description": "A sample repository to showcase the usage of Jest and Enzyme libraries",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "dev-server": "webpack-dev-server --mode development"
   },
   "keywords": [
     "test",
