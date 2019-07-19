@@ -18,5 +18,8 @@
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
     "jest": "^24.8.0"
+  },
+  "dependencies": {
+    "react": "^16.8.6"
   }
 }
